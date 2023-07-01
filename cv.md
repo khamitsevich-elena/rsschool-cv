@@ -36,7 +36,7 @@ function consecutive(arr) {
     let min = arr.reduce((x, y) => Math.min(x, y));
     let max = arr.reduce((x, y) => Math.max(x, y)); 
       let n = 0;
-      for(let i=min;i<=max;i++){
+      for(let i = min; i<= max; i++){
         if(!arr.includes(i)){
           ++n;
         }
