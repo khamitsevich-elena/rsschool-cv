@@ -1,10 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="CV for rsschool Elena Khamitsevich">
+    <title>CV for rsschool Elena Khamitsevich</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <div class="container">
+    <header>
+        <nav>
+        <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#skills">Skills</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#experience">Experience</a>
+              </li>
+          </ul>
+          </nav>
+    </header>
+            <div class="main-container">
+                    <div class="img"><img src="/picofme.jpeg" alt="my photo"></div>
+                    <div class="main-container__name"><h1>KHAMITSEVICH ELENA</h1><h2 class="title">JUNIOR FRONT-END DEVELOPER</h2></div>
+                    <main class="main-container__information">
+                    <section class="main-container__information__left">  
+                    <div class="main-container__about"><h2>About me</h2><p>I am a responsible person, able to work in conditions of multitasking. I am currently working as a Lead Chemical Engineer. When the work ceased to bring pleasure, I became interested in web development. I watch courses on online services, read books. This is not the first time here, but not having enough time I had to quit what I started.My goal is to improve my level of web development for further change of activity.</p></div>
+                    <div class="main-container__english"><h2>English level</h2>
+                      <ul>
+                          <li>A2-B1</li>
+                      </ul></div>
+                      <div class="main-container__skills" id="skills"><h2>Skills</h2>
+                        <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>BEM</li>
+                        <li>LESS/SASS</li>
+                        <li>Figma</li>
+                        <li>JavaScript(Fundamentals, ES6+, DOM, JSON)</li>
+                        <li>React/Redux(basic knowledge)</li>
+                        <li>PHP(basic knowledge)</li>
+                        </ul>
+                    </div>
+                    <div class="main-container__contacts">
+                      <h2 id="contacts">Contacts</h2>
+                      <div class="main-container__contacts__information">
+                        <a href="tel:+375(33)6261781"><i class="fa-solid fa-phone fa-beat fa-2xl" style="color: #ff0000;"></i></a>
+                        <a href="mailto:khamitsevich.elen@gmail.com"><i class="fa-regular fa-envelope fa-beat fa-2xl" style="color: #ffd43b;"></i></a>
+                        <a href="https://discordapp.com/users/861304006295289928/"><i class="fa-brands fa-discord fa-beat fa-2xl" style="color: #0f5ee6;"></i></a>
+                        <a href="https://github.com/khamitsevich-elena"><i class="fa-brands fa-github fa-beat fa-2xl" style="color: #050505;"></i></a>
+                      </div>
+                    </div>
+                    </section>
+                    <section class="main-container__information__right">
+                    <div class="main-container__education"><h2>Education</h2>
+                        <ul class="main-container__education__list">
+                            <li class="education__item">
+                                BELARUSIAN STATE UNIVERSITY
+                                <ul><li>Chemical faculty
+                                <ul><li>Nuclear chemistry</li></ul>
+                                </li>
+                                </ul>
+                            </li>
+                            <li class="education__item">
+                                COURSES
+                                <ul>
+                                <li>TeachMeSkills</li>
+                                <li>Udemy</li>
+                                <li>Learning PHP, MySQL & JavaScript, 6th Edition by Robin Nixon (in progress)</li>
+                                </ul>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="main-container__experience" id="experience"><h2>Experience</h2>
+                    <ul>
+                        <li><a href="https://match-match-game-1daad.web.app/">match-match-game</a></li>
+                        <li><a href="https://khamitsevich-elena.github.io/todolist/todolist">todolist</a></li>
+                        <li><a href="khamitsevich-elena.github.io">pulse</a></li>
+                    </ul></div>
+                    <div class="main-container__code"><h2>Code Example</h2>
+                    <p>
+                        Create the function consecutive(arr) that takes an array of integers and return the minimum number of integers needed to make the contents of arr consecutive from the lowest number to the highest number.
+                        For example:
+                        If arr contains [4, 8, 6] then the output should be 2 because two numbers need to be added to the array (5 and 7) to make it a consecutive array of numbers from 4 to 8. Numbers in arr will be unique.
+<pre>
+
+function consecutive(arr) {
+  if(arr.length == 0){
+    return 0;
+  }
+    let min = arr.reduce((x, y) => Math.min(x, y));
+    let max = arr.reduce((x, y) => Math.max(x, y)); 
+      let n = 0;
+      for(let i = min; i &lt;= max; i++){
+        if(!arr.includes(i)){
+          ++n;
+        }
+
+      }
+      return n;
+}
+</pre>
+                    </div>
+      </section>
+    </main>
+      </div>
+    <footer>
+      <div class="footer__item"><a class="github" href="https://github.com/khamitsevich-elena"><img src="/github-mark.svg" alt="github"></a></div>
+      <div class="footer__item footer__item__year">
+        <img src="/2.svg" alt="num2">
+        <img src="/0.svg" alt="num0">
+        <img src="/2.svg" alt="num2">
+        <img src="/3.svg" alt="num3">
+      </div>
+      <div class="footer__item"><a href="https://rs.school/js/"><img class="rsschool" src="https://rs.school/images/rs_school_js.svg" alt="rsschool"></a></div>
+    </footer>
+  </div>
+    <script src="https://kit.fontawesome.com/39e379a453.js" crossorigin="anonymous"></script>
 </body>
 </html>
