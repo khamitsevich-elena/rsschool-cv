@@ -17,6 +17,17 @@ header {
   display: grid;
   align-items: center;
 }
+header a:link {
+  color: #2b04eb;
+  text-decoration: none;
+}
+header a:visited {
+  color: #2b04eb;
+  text-decoration: none;
+}
+header a:hover {
+  color: #ce0404;
+}
 
 ul {
   margin-left: 5%;
@@ -25,20 +36,6 @@ ul {
 h2 {
   margin-bottom: 1vw;
   text-transform: uppercase;
-}
-
-a:link {
-  text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: #ce0404;
 }
 
 ul {
@@ -146,6 +143,16 @@ footer img {
 
 .main-container__information__left > div, .main-container__information__right > div {
   padding: 2vw;
+}
+
+.main-container__experience a:link {
+  color: #2b04eb;
+}
+.main-container__experience a:visited {
+  color: #2b04eb;
+}
+.main-container__experience a:hover {
+  color: #ce0404;
 }
 
 #contacts {
